@@ -28,9 +28,17 @@ To extract image from  a bag file, one can follow the following [tutorial](http:
 ## Label and annotate the image
 To label and annotate the image, one can use the tool such as [LabelImg](https://github.com/tzutalin/labelImg). Here to save time, we download the annotated data from this [repository](https://github.com/coldKnight/TrafficLight_Detection-TensorFlowAPI) or directly from [here](https://drive.google.com/file/d/0B-Eiyn-CUQtxdUZWMkFfQzdObUE/view?usp=sharing).
 
-The next step is to create a `TFRecord` file from annotated data, one can look at examples from [Tensorflow Object Detection API](https://github.com/tensorflow/models/tree/master/research/object_detection) (in the `dataset_tools`). Adapt from above examples, we use `create_tfrecord.py` to create `TFRecord`.
+The dataset has the following structure
 
-Note that our data has the following structure
+![dataset_structure](./media/dataset_structure.png)
+
+where the annotations are stored in the two above `yaml`.
+
+The next step is to create a `TFRecord` file from annotated data, one can look at examples from [Tensorflow Object Detection API](https://github.com/tensorflow/models/tree/master/research/object_detection) (in the `dataset_tools`). Adapt from above examples, we use `create_tfrecord.py` to create `TFRecord`. We include a [demo notebook on TFRecord](./notebooks/TFRecord_demo.ipynb).
+
+
+
+
 
 
 

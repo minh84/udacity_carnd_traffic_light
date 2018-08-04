@@ -104,13 +104,13 @@ def main(_):
 
 if __name__ == '__main__':
     '''
-    An example to use it 
-    python create_tfrecord.py --data_dir=dataset-sdcnd-capstone/data/sim_training_data \
-    --label_map_path=dataset-sdcnd-capstone/label_map.pbtxt --img_h=600 --img_w=800 \
+    How to use it e.g 
+    python create_tfrecord.py --data_dir=dataset-sdcnd-capstone/sim_training_data \
+    --label_map_path=./label_map.pbtxt --img_h=600 --img_w=800 \
     --output_path=sim.record
     
-    python create_tfrecord.py --data_dir=dataset-sdcnd-capstone/data/real_training_data \
-    --label_map_path=dataset-sdcnd-capstone/label_map.pbtxt --img_h=600 --img_w=800 \
+    python create_tfrecord.py --data_dir=dataset-sdcnd-capstone/real_training_data \
+    --label_map_path=./label_map.pbtxt --img_h=600 --img_w=800 \
     --output_path=real.record
     '''
     tf.app.run()
