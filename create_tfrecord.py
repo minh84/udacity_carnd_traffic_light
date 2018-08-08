@@ -71,9 +71,8 @@ def create_tf_record(annotated_samples, img_h, img_w, data_dir, label_map_dict, 
                                         data_dir,
                                         label_map_dict)
         writer.write(tf_example.SerializeToString())
-
         if i % 10 == 0:
-            sys.stdout.write('\rPercent done {:.2f}%'.format((i / nb_samples) * 100))
+            sys.stdout.write('\rPercent done {:.2f}%'.format((i * 100 / nb_samples)))
 
     writer.close()
 
