@@ -5,4 +5,5 @@ __pycache__/
 object_detection/protos/*.py
 
 *.record
-trained_models/model_zoo
+models_zoo
+*.pyc
